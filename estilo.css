@@ -1,0 +1,264 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/* VARIABLES */
+:root{
+    --verde--oscuro: rgb(132,183,78);
+    --verde-claro:rgb(164,200,120);
+    --verde-muy-claro:rgb(229,241,217);
+    --negro: #010101;
+    --blanco: rgb(249,250,252);
+    --gris:rgb(139, 143, 144);
+}
+/* SELECTOR UNIVERSAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    color: var(--negro);
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+/* HEADER */
+header{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+nav a{
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 200ms ease;
+}
+nav a:hover{
+    color: var(--verde-claro);
+}
+.contenedor-header{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+.empresa{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.header-derecha{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.header-iconos a{
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+    background-color: var(--blanco);
+    border-radius: 50%;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.header-iconos a:hover{
+    color: var(--verde-claro);
+}
+.registrarse button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    background-color: var(--blanco);
+    padding: 0.7rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+.registrarse button:hover{
+    color: var(--verde-claro);
+}
+/* HERO */
+.hero{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.circulo-verde-der{
+    width: 90rem;
+    height: 65rem;
+    background-color: var(--verde--oscuro);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 26rem;
+    left: 45rem;
+}
+.circulo-verde-izq{
+    width: 55rem;
+    height: 45rem;
+    background-color: var(--verde--oscuro);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15rem;
+    left: 89rem;
+}
+.planta-hero{
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+}
+.contenedor-hero{
+    width: 85vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+.textos-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.btn-hero-pregunta{
+    background-color: transparent;
+    border: 1px solid var(--negro);
+    border-radius: 25px;
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.btn-hero-pregunta:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.textos-hero h1{
+    font-size: 5rem;
+    font-weight: 900;
+    width: 90%;
+    letter-spacing: 3px;
+    line-height: 6rem;
+    z-index: 10;
+}
+.textos-hero p{
+    color: var(--gris);
+    font-weight: 400;
+    font-size: 1.2rem;
+    width: 40%;
+}
+.btns-hero{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn-hero-izq{
+    background-color: var(--verde--oscuro);
+    border: 1px solid var(--verde--oscuro);
+    padding: 1.4rem 2.8rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.btn-hero-izq:hover{
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+
+}
+.btn-hero-der{
+    background-color: transparent;
+    border: 1px solid var(--negro);
+    padding: 1.4rem 2.2rem;
+    color: var(--negro);
+    font-size: 1.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.btn-hero-der span{
+    position: relative;
+    top: 0.1rem;
+}
+.btn-hero-der:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.imagenes-hero{
+    position: relative;
+    margin-right: 6rem;
+    z-index: 5;
+}
+.hero-comida-principal{
+    width: 30rem;
+    border-radius: 50%;
+    border: 2.3rem solid var(--verde-claro);
+    animation: girar infinite 40s linear;
+}
+.hero-comida-pequeña{
+    position: absolute;
+    width: 5.2rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.4rem solid rgb(205,182,182);
+}
+.panqueque{
+    border: 0.4rem solid rgb(205,182,182);
+    top: 21rem;
+    left: 35.5rem;
+}
+.pancakes{
+    border: 0.4rem solid rgb(217,198,154);
+    top: 30rem;
+    left: 30rem;
+}
+.pescado{
+    border: 0.4rem solid rgb(182,181,182);
+    top: 35rem;
+    left: 14rem;
+}
+.vegetales{
+    border: 0.4rem solid rgb(237,173,131);
+    top: 30rem;
+    left: 0rem;
+}
+.arroz{
+    border: 0.4rem solid rgb(237,173,131);
+    top: 21rem;
+    left: -7rem;
+}
+@keyframes girar{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
