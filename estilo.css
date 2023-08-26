@@ -18,6 +18,7 @@
 body{
     color: var(--negro);
     overflow-x: hidden;
+    background-color: var(--blanco);
 }
 a{
     text-decoration: none;
@@ -52,7 +53,7 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0rem;
+    padding: 1.8rem 0rem;
 }
 .empresa{
     font-size: 2rem;
@@ -158,7 +159,7 @@ nav a:hover{
     color: var(--gris);
     font-weight: 400;
     font-size: 1.2rem;
-    width: 40%;
+    width: 55%;
 }
 .btns-hero{
     display: flex;
@@ -262,3 +263,86 @@ nav a:hover{
         transform: rotate(360deg);
     }
 }
+/* FIN HERO */
+
+/* SECCION OPCIONES */
+.seccion-opciones{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10rem 0rem 2rem;
+}
+.contenedor-opciones{
+    width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tarjeta{
+    background-color: white;
+    border-radius: 25px;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(209, 205, 205);
+}
+.tarjeta img{
+    width: 14rem;
+    border-radius: 50%;
+    border: 0.9rem solid var(--verde--oscuro);
+    position: absolute;
+    bottom: 14rem;
+    left: 2.3rem;
+}
+.tarjeta-textos{
+    padding: 9rem 0rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+}
+.tarjeta-textos h2{
+    font-size: 1.7rem;
+    width: 80%;
+}
+.tarjeta-textos p{
+    color: var(--gris);
+    width: 70%;
+}
+.opciones-comprar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.opciones-comprar p{
+    border: 1px solid var(--negro);
+    border-radius: 20px;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: var(--negro);
+}
+.opciones-comprar button{
+    border: 1px solid var(--verde--oscuro);
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    white-space: nowrap;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: var(--verde--oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.opciones-comprar button:hover{
+    border: 1px solid var(--verde--oscuro);
+    background-color: var(--blanco);
+    color: var(--verde--oscuro);
+    cursor: pointer;
+}
+/* FIN SECCION OPCIONES */
